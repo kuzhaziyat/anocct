@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "Golos-Bold";
+  src: url("@/assets/css/fonts/GOLOS_BOLD.TTF");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Golos-Regular";
+  src: url("@/assets/css/fonts/GOLOS_REGULAR.TTF");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Golos-Medium";
+  src: url("@/assets/css/fonts/GOLOS_MEDIUM.TTF");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Golos-DEMIBOLD";
+  src: url("@/assets/css/fonts/GOLOS-TEXT_DEMIBOLD.TTF");
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    color: var(--text-color);
+    .content {
+      margin: 1rem;
+      width: var(--mobile-content-size);
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      .title {
+        padding-left: 1rem;
+        font-size: 1.1rem;
+        font-family: "Golos-DEMIBOLD", serif;
+      }
+      .subtitle {
+        padding-left: 1rem;
+        font-size: 1rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 1025px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    color: var(--text-color);
+    .content {
+      margin: 2rem;
+      width: var(--table-content-size);
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      .title {
+        padding-left: 2rem;
+        font-size: 2rem;
+        font-family: "Golos-DEMIBOLD", serif;
+      }
+      .subtitle {
+        padding-left: 2rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    color: var(--text-color);
+    .content {
+      margin: 4rem 0 3rem;
+      width: var(--pc-content-size);
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      .title {
+        padding-left: 2rem;
+        font-size: 2rem;
+        font-family: "Golos-DEMIBOLD", serif;
+      }
+      .subtitle {
+        padding-left: 2rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+body {
+  font-family: "Golos-Regular", serif;
+  background-color: var(--primary-background-color);
+  font-size: 1.5rem;
+  .container {
+    flex: 1;
+  }
+  & strong {
+    font-family: "Golos-DEMIBOLD", serif;
+  }
+}
+:root {
+  --pc-content-size: 60%;
+  --mobile-content-size: 90%;
+  --table-content-size: 90%;
+
+  --background-color: #f6f7fb;
+  --background-hover-color: #e6e6e6;
+  --primary-background-color: #364156;
+
+  --primary-color: #f79236;
+
+  --text-color: #fff;
+  --text-hover-color: #e6e6e6;
+  --primary-text-color: #182330;
+
+  --background-highlight-color: #ede8ef80;
+  --background-hover-highlight-color: #ede8ef;
+}
